@@ -327,7 +327,7 @@ border-radius: 15px 15px 0px 0px;
     display: flex;
     margin-top: 15px;
  }
- .code-links div{
+ .code-links a{
     border: 1px solid var(--main-color);
     padding: 5px 15px 5px;
     border-radius:5px;
@@ -336,17 +336,17 @@ border-radius: 15px 15px 0px 0px;
     
  }
 
- .code-links div:hover{
+ .code-links a:hover{
     transform: scale(1.1);
     background: var(--main-color);
     border: 2px solid var(--main-color);
     
  }
- .code-links div a:hover{
+ .code-links  a:hover{
     color: var(--bg-color);
  }
 
- .code-links div a{
+ .code-links a{
     text-decoration: none;
  }
 
@@ -405,6 +405,114 @@ border-radius: 15px 15px 0px 0px;
     margin-right: 20px;
 }
 
+#start-card{
+    width: 70%; 
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+}
+
+#stat-overflow{
+    height: 25rem; 
+    overflow: hidden;
+}
+
+#start-card-div{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 100.0000%;
+    padding-bottom: 0; 
+    box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); 
+    margin-bottom: 0.9em; 
+    overflow: hidden;
+    border-radius: 8px; 
+    will-change: transform;
+}
+
+#soft_skills {
+    /* margin-top: 100px; */
+    /* border: 1px solid red; */
+    /* padding-top: 100px; */
+    height: auto;
+    margin-top: 150px;
+    /* display: flex; */
+  }
+
+  #soft_skills hr{
+    width: 8rem; 
+    margin: auto;
+    border: 2px solid var(--main-color);
+    margin-bottom: 20px;
+  }
+
+  #soft_div {
+
+    /* border: 1px solid gold; */
+    display: flex;
+    /* grid-template-columns: repeat(4, 100px); */
+    gap: 50px;
+    width: 60%;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  
+  .tech-card {
+    height: 140px;
+    width: 140px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .tech-card-name {
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+  }
+  
+  .tech-card-logo {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    /* border: 1px solid black; */
+    padding: 10px;
+  }
+  
+  .tech-card-logo>img {
+    width: 100%;
+  }
+  
+  .tech-card {
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  
+  .tech-card:hover,
+  .tech-card:focus,
+  .tech-card:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+
+
+
  @media (max-width: 1425px){
     header {
         padding: 16px 3%;
@@ -440,6 +548,12 @@ border-radius: 15px 15px 0px 0px;
 
     .projects{
         width: 80%;
+        transition: .3s;
+    }
+
+    #start-card{
+        width: 80%; 
+        margin: auto;
         transition: .3s;
     }
  }
@@ -492,6 +606,17 @@ border-radius: 15px 15px 0px 0px;
         width: 90%;
         transition: .3s;
     }
+
+    #start-card{
+        width: 90%; 
+        margin: auto;
+        transition: .3s;
+    }
+    #stat-overflow{
+        height: 18rem; 
+        overflow: hidden;
+        transition: .3s
+    }
     .links div{
         width: 30rem;
         margin: auto;
@@ -522,6 +647,12 @@ border-radius: 15px 15px 0px 0px;
         --footer-font:1.5rem;
          transition: .3s;
     }
+   
+    #stat-overflow{
+        height: 15rem; 
+        overflow: hidden;
+        transition: .3s
+    }
     
  }
 
@@ -544,6 +675,17 @@ border-radius: 15px 15px 0px 0px;
     .projects{
         width: 95%;
         transition: .3s;
+    }
+
+    #start-card{
+        width: 90%; 
+        margin: auto;
+        transition: .3s;
+    }
+    #stat-overflow{
+        height: 10rem; 
+        overflow: hidden;
+        transition: .3s
     }
     .about-title hr{
         width: 10rem;
@@ -569,4 +711,18 @@ border-radius: 15px 15px 0px 0px;
      .footer hr{
         width: 11rem;
      }
+
+     /* .CV-btn{
+        display: inline-block;
+        padding: 5px 15px;
+        background: transparent;
+        border: 2px solid var(--main-color);
+        border-radius: 30px;
+        color: var(--text-color);
+        letter-spacing: 1px;
+        font-size: var(--p-font);
+        font-weight: 300;
+        transition: ease .50s;
+        text-decoration: none;
+    } */
  }
