@@ -123,12 +123,13 @@ section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    grid-gap: 4rem;
+    grid-gap: 5rem;
 }
 
 .home-img{
     align-items: center;
     text-align: center;
+    
     
 }
 
@@ -191,8 +192,9 @@ section{
     width: 400px;
     height: auto;
     /* //border: 3px solid red; */
-    border-radius: 0% 0% 40%;
+    /* border-radius: 0% 0% 40%; */
     border-bottom: 10px solid #000080;
+    border-radius: 50%;
     /* padding:0 20px 20px 0;
     background:linear-gradient(blue 0 0) 100% 100% / 55% 100% no-repeat; */
 }
@@ -669,7 +671,7 @@ border-radius: 15px 15px 0px 0px;
         transition: .30s;
     }
     .home-img img{
-        width: 440px;
+        width: 400px;
         height: auto;
     }
     :root{
