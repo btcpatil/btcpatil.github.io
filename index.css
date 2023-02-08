@@ -191,12 +191,12 @@ section{
     max-width: 100%;
     width: 400px;
     height: auto;
-    /* //border: 3px solid red; */
-    /* border-radius: 0% 0% 40%; */
+    /* border: 3px solid red;  */
+    border-radius: 0% 0% 40%;
     border-bottom: 10px solid #000080;
-    border-radius: 50%;
-    /* padding:0 20px 20px 0;
-    background:linear-gradient(blue 0 0) 100% 100% / 55% 100% no-repeat; */
+    /* border-radius: 50%; */
+    /* padding:0 20px 20px 0; */
+    /* background:linear-gradient(#4070F4 0 0) 100% 100% / 55% 100% no-repeat;  */
 }
 
 .parent-about{
